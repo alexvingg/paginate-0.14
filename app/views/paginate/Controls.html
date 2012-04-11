@@ -26,7 +26,7 @@ String __lastURL = __hasNext ? _items.getCallbackURL(__maxPage) : "#";
 %{ if (_items.boundaryControlsEnabled) { %}	
 		<li class="${__currentPage == 1 ? 'off' : 'first'}"><a href="${__firstURL}">Primeiro</a></li>
 %{ } %}
-		<li class="${__hasPrev ? 'previous' : 'off'}"><a href="${__prevURL}">&{'play-paginate.prev'}</a></li>
+		<li class="${__hasPrev ? 'previous' : 'off'}"><a href="${__prevURL}">Segundo</a></li>
 %{
 for (__idx = __firstPage; __idx <= __lastPage; __idx++) {
 boolean __active = __currentPage == __idx;
